@@ -55,3 +55,14 @@ Ui.prototype.deleteFilmFromUI = function(element){
 	
 	element.parentElement.parentElement.remove();
 }
+
+Ui.prototype.clearAllFilmsFromUI = function(){
+	const filmList = document.getElementById("films");
+	filmList.innerHTML = ``;
+
+	/* feast method for clear 
+	while(filmList.firstElementChild !== null){
+		filmList.firstElementChild.remove();
+	} */
+
+}
