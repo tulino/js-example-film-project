@@ -14,6 +14,10 @@ eventListeners();
 
 function eventListeners(){
     form.addEventListener("submit",addFilm);
+    document.addEventListener("DOMContentLoaded",function(){
+        let films = storage.getFilmsFromStorage();
+        ui.loadAllFilms(films);
+    });
 }
 function addFilm(e){
     const title = titleElement.value;
@@ -30,7 +34,7 @@ function addFilm(e){
         ui.addFilmToUI(newFilm); 
 
         storage.addFilmToStorage(newFilm);
-        
+
         ui.displayMessages("Kayıt başarıyla eklendi.","success")
 
     }
