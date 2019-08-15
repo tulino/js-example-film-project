@@ -50,5 +50,9 @@ function deleteFilm(e){
 
 	if( e.target.id === "delete-film"){
 		ui.deleteFilmFromUI(e.target);
+
+		// send film title 
+		storage.deleteFilmFromeStorage(e.target.parentElement.previousElementSibling.previousElementSibling.textContent)
+		ui.displayMessages("Silme işlemi başarılı..","success");
 	}
 }
