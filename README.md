@@ -7,3 +7,4 @@
 * ES6 dan önceki kodlama stili ve sonrasında ki OOP yapısının kullanılması.
 * Modüler yapıyı kurmaya ilişkin örnekler.
 
+![proje görüntüsü](film.png)
